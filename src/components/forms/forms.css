@@ -1,0 +1,13 @@
+.frm{
+  padding-top:8%;
+      position:relative;
+      /* display:flex;
+      justify-content: center;
+      align-items:center; */
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 800px){
+    .frm{
+        padding-top: 20%;
+    }
+    }
