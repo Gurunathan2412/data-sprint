@@ -31,7 +31,7 @@ const Hero = () => {
           Sponsored by <span className="sp-hwk lineUp">Will be announced soon...</span>
         </div>
       </section>
-      <Type dt={["Open to all streams", "Food and Accommodation will be provided", "24 Hours of creation", "24 Hours of fun", "Win exciting cash prizes and internship opportunities!", "Enjoy!"]} />
+      <Type dt={["Open to all streams", "Food will be provided", "24 Hours of creation", "24 Hours of fun", "Win exciting cash prizes!", "Enjoy!"]} />
       <div className="desc-cont">
         <p className="desc">
           Bring-out your hidden tech genius in this <span>24</span> hours hackathon by solving difficult problems faced by the public.

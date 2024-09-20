@@ -1,13 +1,35 @@
-.frm{
-  padding-top:8%;
-      position:relative;
-      /* display:flex;
-      justify-content: center;
-      align-items:center; */
+.frm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding-top: 8%;
+  position: relative;
+}
+
+.frm img {
+  max-width: 640px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px; /* Optional: Add some space between the image and the iframe */
+}
+
+.frm iframe {
+  /* max-width: 640px; */
+  /* width: 100%; */
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  .frm {
+    padding-top: 20%;
   }
 
-  @media screen and (min-width: 350px) and (max-width: 800px){
-    .frm{
-        padding-top: 20%;
-    }
-    }
+  .frm img {
+    padding-top: 35px;
+    max-width: 92%; /* Make sure the image scales down on smaller screens */
+  }
+
+  .frm iframe {
+    max-width: 100%;
+  }
+}

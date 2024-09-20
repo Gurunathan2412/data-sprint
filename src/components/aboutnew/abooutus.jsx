@@ -9,12 +9,12 @@ const Aboutus=()=>{
       imageUrl: 'https://ai.sairamit.edu.in/wp-content/uploads/sites/11/2024/01/Dr.SUGANTHI.SU_.png', // replace with actual image path
     },
     {
-      name: 'Mr. B.Ravikumar',
+      name: 'Dr. A.SIVABALAN',
       designation: 'Assistant Professor',
       imageUrl: 'path-to-officer1-image.jpg', // replace with actual image path
     },
     {
-      name: 'Dr. A.Rajsekar',
+      name: 'Mr. B.Ravikumar',
       designation: 'Assistant Professor',
       imageUrl: 'path-to-officer2-image.jpg', // replace with actual image path
     },
