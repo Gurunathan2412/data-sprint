@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Slider from "react-slick";
 import './about.css';
 
 const About = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [fade, setFade] = useState(true);
-
     // List of image links
     const images = [
         'https://res.cloudinary.com/dh2mrevv0/image/upload/v1726763442/Copy_of_DSC_2569_kdxair.jpg',
@@ -24,18 +22,19 @@ const About = () => {
         'https://res.cloudinary.com/dh2mrevv0/image/upload/v1726763407/Copy_of_DSC_2804_uwykuz.jpg',
         'https://res.cloudinary.com/dh2mrevv0/image/upload/v1726763401/Copy_of_DSC_2573_b71phx.jpg'
     ];
-    // Auto-slide functionality with fade effect
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFade(false); // Start fade out
-            setTimeout(() => {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-                setFade(true); // Fade in the new image
-            }, 500); // 500ms to match the CSS transition duration
-        }, 3000); // Change image every 3 seconds
 
-        return () => clearInterval(interval);
-    }, [images.length]);
+    // Slider settings
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000, // 3 seconds
+        fade: true, // Enable fade transition
+        cssEase: "linear"
+    };
 
     return (
         <section className="about-us" id="about-us">
@@ -45,8 +44,14 @@ const About = () => {
                     <p>Are you ready to embark on a data-driven adventure? DataSprint is your chance to immerse yourself in the world of AI and data science. Whether you're a coding prodigy or a creative thinker, this hackathon offers a platform to showcase your skills, learn from industry experts, and collaborate with like-minded enthusiasts.</p>
                     <p>Join us for an exhilarating journey into the realm of artificial intelligence and data science at DataSprint, an extraordinary hackathon organized by the Department of <span className="ai">Artificial Intelligence and Data Science</span> at Sri Sairam Institute of Technology.</p>
                 </div>
-                <div className={`carousel ${fade ? 'fade-in' : 'fade-out'}`}>
-                    <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+                <div className="carousel">
+                    <Slider {...settings}>
+                        {images.map((image, index) => (
+                            <div key={index}>
+                                <img src={image} alt={`Slide ${index + 1}`} />
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </section>
@@ -54,6 +59,7 @@ const About = () => {
 };
 
 export default About;
+
 
 // import React from "react";
 // import'./about.css'

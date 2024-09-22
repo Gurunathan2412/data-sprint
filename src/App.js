@@ -17,6 +17,9 @@ import Chront from './components/chrono/chrono';
 import Aboutus from './components/aboutnew/abooutus';
 import Sponsors from './components/sponsors/sponsors';
 import SponsorPage from './components/sponsors-page/sponsorpage';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const slideData = [
   {
     index: 0,
