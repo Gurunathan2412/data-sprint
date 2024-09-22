@@ -25,9 +25,10 @@ const About = () => {
 
     // Slider settings
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 1000,
+        arrows:false,
+        speed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
