@@ -19,6 +19,15 @@
     position: relative;
 }
 
+.glitch-image {
+    width: 40%;
+  }
+  
+  @media screen and (min-width: 350px) and (max-width: 850px) {
+    .glitch-image {
+      width: 90%;
+    }
+  }
 .video-container iframe {
     width: 50%;
     height: 400px;

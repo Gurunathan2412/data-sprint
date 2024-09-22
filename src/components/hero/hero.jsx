@@ -11,6 +11,30 @@ import { Link } from "react-router-dom";
 import { GlitchImage } from "react-glitch-image";
 
 const Hero = () => {
+
+    const [width, setWidth] = useState('40%'); // Default width
+  
+    const handleResize = () => {
+      // If screen width is between 350px and 850px, set width to 90%
+      if (window.innerWidth >= 350 && window.innerWidth <= 850) {
+        setWidth('90%');
+      } else {
+        setWidth('40%');
+      }
+    };
+  
+    useEffect(() => {
+      // Add event listener on window resize
+      window.addEventListener('resize', handleResize);
+  
+      // Call the function initially to set the correct width
+      handleResize();
+  
+      // Cleanup event listener on component unmount
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
   return (
     <div className="hero-cont">
       <section className="hero" id="hero">
@@ -20,8 +44,9 @@ const Hero = () => {
           <span className="pr">presents</span>
         </div>
         <GlitchImage
+        className="glitch-image"
           image={logo}
-          width={"40%"}
+          width={width}
           animationDuration={400}
           animationInterval={3000}
           activeFxOnHover={false}

@@ -32,7 +32,7 @@ const About = () => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setFade(true); // Fade in the new image
             }, 500); // 500ms to match the CSS transition duration
-        }, 4000); // Change image every 3 seconds
+        }, 3000); // Change image every 3 seconds
 
         return () => clearInterval(interval);
     }, [images.length]);

@@ -153,10 +153,10 @@
     }
     .header-nav .branding .evt{
         display: inline-block;
-        width: 140px;
+        width: 110px;
         transition: width 0.4s ease;
         will-change: width;
-        margin-left:15px;
+        margin-left:7px;
         height:auto;
     }
     .clg{
