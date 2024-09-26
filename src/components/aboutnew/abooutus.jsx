@@ -11,7 +11,7 @@ const Aboutus=()=>{
     {
       name: 'Dr. A.SIVABALAN',
       designation: 'Assistant Professor',
-      imageUrl: 'path-to-officer1-image.jpg', // replace with actual image path
+      imageUrl: 'https://res.cloudinary.com/dh2mrevv0/image/upload/v1727343430/WhatsApp_Image_2024-09-26_at_15.04.46_3b15d224_aonwyd.jpg', // replace with actual image path
     },
     {
       name: 'Mr. B.Ravikumar',
@@ -20,7 +20,7 @@ const Aboutus=()=>{
     },
     {
       name: 'U.G. Anirudh ',
-      designation: 'Organizer',
+      designation: 'Student Organizer',
       imageUrl: 'https://res.cloudinary.com/dcsduqstu/image/upload/v1726761732/WhatsApp_Image_2024-09-19_at_21.30.06_f4fc633d_w3vpqc.jpg', // replace with actual image path
     },
   ];

@@ -79,7 +79,7 @@ const Hero = () => {
       {/* Embed YouTube video */}
       <div className="video-container">
     <iframe
-        src="https://www.youtube.com/embed/fa8k8IQ1_X0?si=xMI6Z2x5t1c3CgM5"
+        src="https://www.youtube.com/embed/K6GlwtmQhgM"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

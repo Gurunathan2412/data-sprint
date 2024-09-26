@@ -23,7 +23,9 @@
   .frm {
     padding-top: 20%;
   }
-
+  .form-submit{
+    height: 4000px;
+  }
   .frm img {
     padding-top: 35px;
     max-width: 92%; /* Make sure the image scales down on smaller screens */
@@ -31,5 +33,6 @@
 
   .frm iframe {
     max-width: 100%;
+    
   }
 }
