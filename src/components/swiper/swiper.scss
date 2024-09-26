@@ -84,7 +84,7 @@ ol ul{
   .crds_text {
     color: #DDDACB;
     font-family: 'Raleway', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     p {
       // max-width: 700px;
       font-size: 1.5rem;
@@ -123,8 +123,8 @@ ol ul{
   @media screen and (max-width: 850px) {
 .crdss{
 padding-top: 35%;
-margin-left: 5%;
-margin-right: 5%;
+// margin-left: 5%;
+// margin-right: 5%;
 }
 .crds_title{
   font-size: 2rem;
@@ -135,5 +135,19 @@ width:90%;
 // .crds_content{
 //   padding:0;
 // }
+.crds_text {
+  color: #DDDACB;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  p {
+    // max-width: 700px;
+    font-size: 1.3rem;
+  }
+}
 
+.crds_content {
+  padding: .5rem;
+  z-index: 1;
+  display: block;
+}
   }

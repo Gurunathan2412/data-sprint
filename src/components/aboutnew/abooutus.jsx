@@ -16,10 +16,10 @@ const Aboutus=()=>{
     {
       name: 'Mr. B.Ravikumar',
       designation: 'Assistant Professor',
-      imageUrl: 'path-to-officer2-image.jpg', // replace with actual image path
+      imageUrl: 'https://res.cloudinary.com/dh2mrevv0/image/upload/v1727325012/Screenshot_2024-09-26_095447_b7ofac.png', // replace with actual image path
     },
     {
-      name: 'Mr. U.G. Anirudh ',
+      name: 'U.G. Anirudh ',
       designation: 'Organizer',
       imageUrl: 'https://res.cloudinary.com/dcsduqstu/image/upload/v1726761732/WhatsApp_Image_2024-09-19_at_21.30.06_f4fc633d_w3vpqc.jpg', // replace with actual image path
     },

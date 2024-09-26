@@ -44,8 +44,8 @@ const Card=()=>{
     },
     {
       "title": "Natural Language Processing and Its Applications",
-      "challenge": "No Equivalent Challenge Available in Provided Data",
-      "desc": "No Equivalent Challenge Available in Provided Data",
+      "challenge": "Build an NLP solution to tackle real-world problems, enhancing communication, automation, or data processing.",
+      "desc": "Natural Language Processing (NLP) enables machines to understand and interact with human language. Your challenge is to design an innovative NLP solution that addresses a critical real-world problem in sectors like healthcare, finance, or education. Whether it's enhancing customer service with AI chatbots, automating document analysis, or improving language translation, leverage NLP to create impactful solutions that streamline communication, decision-making, or data processing.",
       "id": "DS-07"
     },
     {

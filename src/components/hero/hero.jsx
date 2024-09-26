@@ -53,13 +53,13 @@ const Hero = () => {
           activeFxOnInterval={true}
         />
         <div className="sponsors">
-          Sponsored by <span className="sp-hwk lineUp">Will be announced soon...</span>
+          Sponsors<span className="sp-hwk lineUp"> Will be announced soon...</span>
         </div>
       </section>
       <Type dt={["Open to all streams", "Food will be provided", "24 Hours of creation", "24 Hours of fun", "Win exciting cash prizes!", "Enjoy!"]} />
       <div className="desc-cont">
         <p className="desc">
-          Bring-out your hidden tech genius in this <span>24</span> hours hackathon by solving difficult problems faced by the public.
+        <span>24 Hours</span>, Infinite Possibilities, Push the Boundaries of AI Innovation at the Data Sprint Hackathon!
         </p>
       </div>
       <hr />
