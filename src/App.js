@@ -170,7 +170,8 @@ return (
     "The abstract, in a brief manner, should expound upon the approach that is proposed to be employed during the Hackathon.",
     "The abstract must be original. Plagiarism will be strictly condemned and will be disqualified immediately.",
     "Upon being shortlisted, an entry fee of ₹200 per team must be paid in order to complete registration.",
-    "In the spirit of competition, it is our humble request that the code / algorithm be developed in-venue only throughout the duration of the hackathon."
+    "In the spirit of competition, it is our humble request that the code / algorithm be developed in-venue only throughout the duration of the hackathon.",
+    "Registrations for the first round are limited to 70 teams on a first-come, first-served basis."
 ]}/>}/>
       <Route path='problems' element={<Cardlist/>}/>
       <Route path='register' element={<Form/>}/>
