@@ -4,7 +4,7 @@ import './chrono.scss'
 const Chront=()=>{
   let dt=[
     {"date": "September 26", "title": "Registrations open"},
-    {"date": "October 6", "title": "Registrations close"},
+    {"date": "October 5", "title": "Registrations close"},
     {"date": "October 8", "title": "Deadline for confirmation of finalists"},
     {"date": "October 14", "title": "Showdown begins"},
     {"date": "October 15", "title": "Showdown ends"}
