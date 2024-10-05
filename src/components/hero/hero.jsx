@@ -53,7 +53,7 @@ const Hero = () => {
           activeFxOnInterval={true}
         />
         <div className="sponsors">
-          Sponsors<span className="sp-hwk lineUp"> Will be announced soon...</span>
+          <span className="sp-hwk lineUp"> The registration has been closed</span>
         </div>
       </section>
       <Type dt={["Open to all streams", "Food will be provided", "24 Hours of creation", "24 Hours of fun", "Win exciting cash prizes!", "Enjoy!"]} />
