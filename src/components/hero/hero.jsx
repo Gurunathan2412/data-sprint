@@ -71,9 +71,9 @@ const Hero = () => {
         <h2>October 14 - October 15 , 2024</h2>
       </div>
       <div className="butn-container">
-        <Link to="guidelines">
-          <button className="butn">Register</button>
-        </Link>
+        {/* <Link to="guidelines"> */}
+          <button className="butn">Registration closed</button>
+        {/* </Link> */}
       </div>
 
       {/* Embed YouTube video */}

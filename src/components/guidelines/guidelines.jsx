@@ -15,7 +15,9 @@ const Guidelines=(props)=>{
      { props.list.map((e)=><Line line={e} />)} 
   </ol>
 </div>
-<Link to="/register"><button class="butn">Register</button></Link>
+{/* <Link to="/register"> */}
+<button class="butn">Registration closed</button>
+{/* </Link> */}
 </div>
     )
 }
