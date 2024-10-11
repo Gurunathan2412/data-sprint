@@ -3,11 +3,22 @@ import "./sponsors.css"
 const Sponsors=()=>{
     return(
         <section className="spnsors" id="sponsors">
-        {/* <h1>Our Sponsors</h1> */}
+        <h1>Our Sponsors</h1>
         <div className="company-btns">
         <div >
-            {/* <a target="_blank" href="https://blackhawknetwork.com/" className="company-btn" data-aos="zoom-in"><img src="https://res.cloudinary.com/dcsduqstu/image/upload/v1692282174/blackhawk_puzzpk.png" alt=""/></a> */}
-            {/* <div className="spoName">Blackhawk Network</div> */}
+            { <a target="_blank" href="https://www.thozhil.co.in/" className="company-btn" data-aos="zoom-in"><img src="https://res.cloudinary.com/dh2mrevv0/image/upload/v1728662592/tholil_mbz8ox.jpg" alt=""/></a> }
+            { <div className="spoName">Thozhil</div> }
+           
+                       
+        </div>
+        <div >
+            { <a target="_blank" href="https://oneyesinfotechsolutions.com/" className="company-btn" data-aos="zoom-in"><img src="https://res.cloudinary.com/dh2mrevv0/image/upload/v1728662591/oneyes_pyndzy.jpg" alt=""/></a> }
+            { <div className="spoName">OneYes</div> }
+           
+                       
+        </div> <div >
+            { <a target="_blank" href="https://www.idacreations.com/" className="company-btn" data-aos="zoom-in"><img src="https://res.cloudinary.com/dh2mrevv0/image/upload/v1728662591/ida_zkhkrb.jpg" alt=""/></a> }
+            { <div className="spoName">IDA</div> }
            
                        
         </div>

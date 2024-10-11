@@ -27,7 +27,7 @@ const Navbar=()=>{
             <Link to="/aboutus" className="nav-btn"  onClick={toggle}>About us</Link>
             <Link to="/problems" className="nav-btn"  onClick={toggle}>Problems</Link>
             
-           {/* <Link to={{pathname: '/', hash: '#sponsors'}} className="nav-btn" onClick={toggle}>Sponsors</Link> */}
+           <Link to={{pathname: '/', hash: '#sponsors'}} className="nav-btn" onClick={toggle}>Sponsors</Link>
             <Link to="guidelines" className="nav-btn"  onClick={toggle}>Guidelines</Link>
             <Link to="/register" className="nav-btn ghost-btn"  onClick={toggle}>Register</Link>
         </div>
