@@ -8,7 +8,7 @@ import Footer from './components/footer/footer';
 import Type from './components/type/type';
 import Navbar from './components/navbar/nav';
 import Hero from './components/hero/hero';
-import {Routes,Route} from "react-router-dom"
+import {Routes,Route,useLocation} from "react-router-dom"
 import Guidelines from './components/guidelines/guidelines';
 import DomainList from './components/problems/problems';
 import Cardlist from './components/swiper/swiper';
@@ -19,7 +19,7 @@ import Sponsors from './components/sponsors/sponsors';
 import SponsorPage from './components/sponsors-page/sponsorpage';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Time from "./components/counrdown"
 const slideData = [
   {
     index: 0,
@@ -50,6 +50,7 @@ const slideData = [
 function App() {
   const particlesInit = useCallback(async engine => {
     console.log(engine);
+
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -60,6 +61,7 @@ function App() {
 const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
+  const location = useLocation();
 
 return (
   <div class="app">
@@ -159,6 +161,7 @@ return (
         smooth:true,
       }}/>
       <Routes>
+      <Route path='/timer' element={<Time/>}/>
       <Route path='/' element={<Navbar/>}>
       <Route index element={<Hero/>}/>
       <Route path='guidelines' element={<Guidelines list={[
@@ -180,7 +183,7 @@ return (
         
       </Route>
     </Routes>
-    <Footer/> 
+    {location.pathname !== '/timer' && <Footer />}
 
 </div>
 );
