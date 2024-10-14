@@ -70,7 +70,7 @@ const Time = () => {
   }, [remainingTime]);
 
   const startCountdown = () => {
-    const newRemainingTime = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+    const newRemainingTime = (2 * 60 * 60 * 1000) + (15 * 60 * 1000); // 2 hours and 15 minutes in milliseconds
     setRemainingTime(newRemainingTime);
     localStorage.setItem('remainingTime', Date.now() + newRemainingTime); // Save end time
     setTimerActive(true);
